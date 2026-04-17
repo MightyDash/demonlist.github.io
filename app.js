@@ -606,7 +606,7 @@ function tryNextThumbnailCandidate(image, candidates, candidateIndex) {
 
 function buildThumbnailUrl(levelId, extensionIndex = 0) {
   const extension = THUMBNAIL_EXTENSIONS[extensionIndex];
-  return `${THUMBNAIL_BASE_PATH}/${levelId}.${extension}`;
+  return buildAssetUrl(THUMBNAIL_BASE_PATH, levelId, extension);
 }
 
 function buildThumbnailCandidates(item) {
@@ -621,6 +621,7 @@ function buildThumbnailCandidates(item) {
   if (item.name) {
     const trimmedName = String(item.name).trim();
     bases.push(trimmedName);
+    bases.push(trimmedName.toLowerCase());
     bases.push(slugifyFileName(trimmedName));
   }
 
@@ -630,7 +631,7 @@ function buildThumbnailCandidates(item) {
     }
 
     for (const extension of THUMBNAIL_EXTENSIONS) {
-      const url = `${THUMBNAIL_BASE_PATH}/${base}.${extension}`;
+      const url = buildAssetUrl(THUMBNAIL_BASE_PATH, base, extension);
       if (!seen.has(url)) {
         seen.add(url);
         candidates.push(url);
@@ -664,7 +665,7 @@ function tryNextFace(image, difficultyKey, extensionIndex) {
 
 function buildFaceUrl(difficultyKey, extensionIndex = 0) {
   const extension = FACE_EXTENSIONS[extensionIndex];
-  return `${FACE_BASE_PATH}/${difficultyKey}.${extension}`;
+  return buildAssetUrl(FACE_BASE_PATH, difficultyKey, extension);
 }
 
 function slugifyDifficulty(difficulty) {
@@ -680,6 +681,11 @@ function slugifyFileName(value) {
     .toLowerCase()
     .replace(/[<>:"/\\|?*]+/g, "")
     .replace(/\s+/g, "-");
+}
+
+function buildAssetUrl(basePath, fileBase, extension) {
+  const safeBase = encodeURIComponent(String(fileBase || "").trim());
+  return `${basePath}/${safeBase}.${extension}`;
 }
 
 function updateListTitle() {
