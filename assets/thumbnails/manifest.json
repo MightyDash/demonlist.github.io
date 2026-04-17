@@ -1,7 +1,40 @@
 {
-  "id:10565740": "Bloodbath.jpg",
   "id:61366260": "Beetle.jpg",
+  "id:10565740": "Bloodbath.jpg",
+  "id:130288302": "Eight OEight.jpg",
+  "id:129168190": "Everyday.jpg",
+  "id:136107508": "HYPERVOID.jpg",
+  "id:76742853": "ILLUSION OF SPACE.jpg",
+  "id:131182120": "Ice Age.jpg",
+  "id:82015235": "Lightning Speed.jpg",
+  "id:93320781": "NongPholic.jpg",
   "id:61067595": "Sleepless.jpg",
-  "id:82015235": "Lightning Speed.jpg"
-  "id:136107508": "HYPERVOID.jpg"
+  "id:130783561": "The Perfect Girl.jpg",
+  "id:127602122": "0 exit.jpg",
+
+  "name:0 exit": "0 exit.jpg",
+  "name:Beetle": "Beetle.jpg",
+  "name:Bloodbath": "Bloodbath.jpg",
+  "name:Eight OEight": "Eight OEight.jpg",
+  "name:Everyday": "Everyday.jpg",
+  "name:HYPERVOID": "HYPERVOID.jpg",
+  "name:ILLUSION OF SPACE": "ILLUSION OF SPACE.jpg",
+  "name:Ice Age": "Ice Age.jpg",
+  "name:Lightning Speed": "Lightning Speed.jpg",
+  "name:NongPholic": "NongPholic.jpg",
+  "name:Sleepless": "Sleepless.jpg",
+  "name:The Perfect Girl": "The Perfect Girl.jpg",
+
+  "slug:0-exit": "0 exit.jpg",
+  "slug:beetle": "Beetle.jpg",
+  "slug:bloodbath": "Bloodbath.jpg",
+  "slug:eight-oeight": "Eight OEight.jpg",
+  "slug:everyday": "Everyday.jpg",
+  "slug:hypervoid": "HYPERVOID.jpg",
+  "slug:illusion-of-space": "ILLUSION OF SPACE.jpg",
+  "slug:ice-age": "Ice Age.jpg",
+  "slug:lightning-speed": "Lightning Speed.jpg",
+  "slug:nongpholic": "NongPholic.jpg",
+  "slug:sleepless": "Sleepless.jpg",
+  "slug:the-perfect-girl": "The Perfect Girl.jpg"
 }
