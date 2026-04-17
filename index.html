@@ -107,14 +107,14 @@
           <table class="demon-table">
             <thead>
               <tr>
-                <th>Placement</th>
-                <th>Demon</th>
-                <th>Creator(s)</th>
-                <th>Difficulty</th>
-                <th>Attempts</th>
-                <th>Year</th>
-                <th>Tier</th>
-                <th>Tier +/-</th>
+                <th data-label="Placement">Placement</th>
+                <th data-label="Demon">Demon</th>
+                <th data-label="Creator(s)">Creator(s)</th>
+                <th data-label="Difficulty">Difficulty</th>
+                <th data-label="Attempts">Attempts</th>
+                <th data-label="Year">Year</th>
+                <th data-label="Tier">Tier</th>
+                <th data-label="Tier +/-">Tier +/-</th>
               </tr>
             </thead>
             <tbody id="demon-table-body"></tbody>
@@ -212,20 +212,20 @@
 
   <template id="row-template">
     <tr>
-      <td class="placement"></td>
-      <td>
+      <td class="placement" data-label="Placement"></td>
+      <td data-label="Demon">
         <div class="demon-cell">
           <img class="demon-cell__thumb" alt="">
           <span class="demon-cell__name"></span>
           <span class="demon-cell__id"></span>
         </div>
       </td>
-      <td class="creators"></td>
-      <td class="difficulty"></td>
-      <td class="attempts"></td>
-      <td class="year"></td>
-      <td class="tier"></td>
-      <td class="tier-change"></td>
+      <td class="creators" data-label="Creator(s)"></td>
+      <td class="difficulty" data-label="Difficulty"></td>
+      <td class="attempts" data-label="Attempts"></td>
+      <td class="year" data-label="Year"></td>
+      <td class="tier" data-label="Tier"></td>
+      <td class="tier-change" data-label="Tier +/-"></td>
     </tr>
   </template>
 
