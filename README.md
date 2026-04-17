@@ -45,10 +45,3 @@ Your Apps Script endpoint should return something like this:
    Script web app URL.
 3. Make sure the Apps Script response allows public `GET` access if you want the
    website to load for everyone.
-
-## Notes
-
-- If the endpoint is not configured yet, the site falls back to mock data so you
-  can still preview the design.
-- If your Apps Script currently returns a different JSON shape, I can adapt the
-  frontend quickly once you share that output.
