@@ -841,3 +841,207 @@ select:focus {
     grid-template-columns: 1fr;
   }
 }
+
+@media (max-width: 768px) {
+  .page-shell {
+    width: min(100% - 12px, 1360px);
+    padding: 10px 0 28px;
+  }
+
+  .hero {
+    gap: 12px;
+    margin-bottom: 14px;
+  }
+
+  .hero__copy,
+  .hero__stats,
+  .controls,
+  .list-section {
+    border-radius: 18px;
+  }
+
+  .hero__copy {
+    padding: 22px 18px;
+  }
+
+  h1 {
+    font-size: clamp(2rem, 10vw, 3rem);
+  }
+
+  .hero__text {
+    font-size: 0.95rem;
+    line-height: 1.55;
+  }
+
+  .hero__stats {
+    grid-template-columns: 1fr;
+    padding: 14px;
+  }
+
+  .stat-card,
+  .stat-card--wide {
+    grid-column: auto;
+  }
+
+  .controls {
+    gap: 12px;
+    padding: 14px;
+  }
+
+  .controls__stack {
+    gap: 12px;
+  }
+
+  .segment-tabs {
+    gap: 6px;
+  }
+
+  .segment-tab {
+    padding: 10px 12px;
+    font-size: 0.88rem;
+  }
+
+  .list-section {
+    padding: 16px;
+  }
+
+  .section-header {
+    margin-bottom: 12px;
+  }
+
+  .result-count {
+    font-size: 0.95rem;
+  }
+
+  .table-wrap {
+    overflow: visible;
+    border: none;
+    background: transparent;
+  }
+
+  .demon-table {
+    min-width: 0;
+    background: transparent;
+  }
+
+  .demon-table thead {
+    display: none;
+  }
+
+  .demon-table,
+  .demon-table tbody,
+  .demon-table tr,
+  .demon-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .demon-table tbody {
+    display: grid;
+    gap: 12px;
+  }
+
+  .demon-table tbody tr {
+    padding: 14px;
+    border-radius: 18px;
+    border: 1px solid rgba(214, 163, 75, 0.16);
+    background: rgba(18, 12, 8, 0.7);
+  }
+
+  .demon-table td {
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 10px;
+  }
+
+  .demon-table td:last-child {
+    margin-bottom: 0;
+  }
+
+  .demon-table td::before {
+    content: attr(data-label);
+    display: block;
+    margin-bottom: 6px;
+    color: var(--muted);
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.72rem;
+  }
+
+  .demon-table td[data-label="Demon"]::before {
+    margin-bottom: 8px;
+  }
+
+  .demon-cell {
+    grid-template-columns: 96px 1fr;
+    gap: 10px;
+  }
+
+  .demon-cell__thumb {
+    width: 96px;
+    height: 54px;
+  }
+
+  .demon-cell__name {
+    font-size: 1.05rem;
+    line-height: 1.15;
+  }
+
+  .placement-wrap {
+    font-size: 1.05rem;
+  }
+
+  .difficulty-tag {
+    min-width: 0;
+    justify-content: flex-start;
+    width: fit-content;
+  }
+
+  .modal {
+    padding: 8px;
+  }
+
+  .modal__panel {
+    width: 100%;
+    max-height: 96vh;
+    border-radius: 20px;
+  }
+
+  .modal__topbar {
+    padding: 14px 14px 0;
+  }
+
+  .modal__content {
+    gap: 16px;
+    padding: 12px 14px 16px;
+  }
+
+  .modal__media {
+    padding: 10px;
+    border-radius: 16px;
+  }
+
+  .modal__headline h3 {
+    font-size: clamp(1.8rem, 11vw, 2.6rem);
+  }
+
+  .modal__placement-number {
+    font-size: clamp(2.4rem, 16vw, 3.8rem);
+  }
+
+  .mini-stat {
+    padding: 12px;
+  }
+
+  .mini-stat__value {
+    font-size: 1.2rem;
+  }
+
+  .detail-card {
+    padding: 14px;
+  }
+
+  .notes-input {
+    min-height: 100px;
+  }
+}
